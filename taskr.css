@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+p{
+    color: #717171;
+    line-height: 1.5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 7%;
+    line-height: 1.5;
+}
+
+header i{
+    font-size: 3em;
+    padding: 0;
+    color: #37338C;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul li{
+    padding: 5px 17px;
+    list-style: none;
+    
+}
+
+.nav a{
+    font-size: 17px;
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+a .active{
+    color: black;
+    text-decoration: none;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: 300ms ease-out;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+#signIn{
+    background: #F5F7FA;
+    color: #37338C;
+}
+
+#signUp{
+    background: #37338C;
+    color: white;
+}
+
+.main{
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 7%;
+    line-height: 1.5;
+}
+
+.span{
+    color: #37338C;
+}
+
+.taskr{
+    padding: 0 7%;
+    background: #F5F7FA;
+}
+
+.taskrUse{
+    text-align: center;
+    line-height: 1.4;  
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 7px; 
+    margin-top: 20px;
+}
+
+.taskrImportance{
+    text-align: center;
+    width: 299px;
+    box-shadow: 0 2px 4px  #F5F7FA;
+    padding: 10px 20px;
+    background: white;
+}
+
+.taskrImportance img{
+    width: 64px;
+    height: 56px;
+}
+
+.contact{
+    min-height: 200px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.waitlist, .shape{
+    padding: 50px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F5F7FA;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: #263238;
+    padding: 50px 7%;
+    color:white;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+footer li{
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer .icon{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.icon i{
+    border-radius: 50%;
+    padding: 4px;
+    background: #4D4D4D;
+}
+
+footer h3{
+    margin: 10px 0;
+}
+
+.input{
+    background: #89939E;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+footer input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+footer ::-webkit-input-placeholder{
+    color: white;
+}
+
+/*contact page*/
+.contactUs{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form{
+    width: 50%;
+    height: 100vh;
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.form h3{
+    text-align: left;
+}
+
+.form input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.taskrpage{
+    width: 50%;
+    background: #37338C;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+    color: white;
+    height: 100vh;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="button"] {
+    background: #37338C;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
