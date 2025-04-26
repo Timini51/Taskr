@@ -71,6 +71,7 @@ h2 {
     align-items: center;
     justify-content: center;
     border: solid #888;
+    gap: 10px;
     border-radius: 10px;
     
 }
