@@ -102,6 +102,10 @@ button{
     line-height: 1.5;
 }
 
+.main .buttons{
+    display: none;
+}
+
 .image{
     width: 40%;
     margin-top: 40px;
