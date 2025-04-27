@@ -91,6 +91,7 @@ button{
 
 .menu{
     display: none;
+    width: 24px;
 }
 
 .main{
@@ -126,7 +127,7 @@ button{
 
 .taskr{
     padding: 0 7%;
-    background: #F5F7FA;
+    background: white;
 }
 
 .taskrUse{
@@ -168,6 +169,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: #F5F7FA;
 }
 
 .waitlist, .shape{
@@ -175,7 +177,7 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #F5F7FA;
+    background: white;
 }
 
 footer{
