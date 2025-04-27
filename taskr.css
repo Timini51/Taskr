@@ -251,7 +251,7 @@ footer ::-webkit-input-placeholder{
     justify-content: space-between;
 }
 
-form{
+.contactUs form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -411,8 +411,13 @@ input[type="button"] {
     }
 
     .main .buttons{
-        display: block;
+        display: initial;
         gap: 20px;
+    }
+
+    .main .buttons form{
+        width: fit-content;
+        display: initial;
     }
 
     header .buttons{
