@@ -6,7 +6,7 @@ body {
     background-size: cover;
     background-position: center;
     background-color: white;
-    background-blend-mode: darken;
+    font-family: "roboto";
    
     
     display: flex;
@@ -22,9 +22,8 @@ body {
     backdrop-filter: 30px;
     padding: 20px;
 }
-h1{
-    margin-bottom: 24px;
-    color: black;
+h1 {
+    color: rgb(44, 43, 43);
     font-size: 40px;
 }
 form {
@@ -35,7 +34,7 @@ form {
     gap: 8px;
 }
 input {
-    height: 30px;
+    height: 40px;
     border-radius: 4px;
     font-size: 16px;
     text-align: left;
@@ -43,13 +42,37 @@ input {
     
 }
 button {
-   height: 30px;
-   background: rgb(36, 36, 113);
+   height: 40px;
+   background: #37338c;
    border: solid #ccc 1px;
-   font-size: 16px;
+   font-size: 20px;
    border-radius: 10px;
    color: white;
    
+}
+
+.loginOptions{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.google {
+    display: flex;
+    border: solid rgb(103, 99, 99);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 200px;
+
+}
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 h2 {
@@ -63,21 +86,6 @@ h2 {
     font-size: 80px;
     border-top-left-radius: 40px;
     color: white;
-    background-color: darkblue
+    background-color: #37338c 
 }
  
-.loginOptions{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid #888;
-    gap: 10px;
-    border-radius: 10px;
-    
-}
-p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
