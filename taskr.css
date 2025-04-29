@@ -299,7 +299,7 @@ textarea{
     resize: none;
 }
 
-input[type="button"] {
+input[type="submit"] {
     background: #37338C;
     color: white;
     border: none;
