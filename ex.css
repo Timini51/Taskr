@@ -7,7 +7,6 @@ body {
     background-position: center;
     background-color: white;
     font-family: "roboto";
-   
     
     display: flex;
     justify-content: center;
@@ -22,9 +21,10 @@ body {
     backdrop-filter: 30px;
     padding: 20px;
 }
-h1 {
+h1{
     color: rgb(44, 43, 43);
     font-size: 40px;
+
 }
 form {
     width: 100%;
@@ -40,6 +40,7 @@ input {
     text-align: left;
     border: solid #ccc 1px;
     
+    
 }
 button {
    height: 40px;
@@ -53,10 +54,11 @@ button {
 
 .loginOptions{
     display: flex;
-    text-align: center;
     justify-content: center;
+    text-align: center;
     gap: 10px;
-
+    
+    
 }
 .google {
     display: flex;
@@ -66,7 +68,6 @@ button {
     align-items: center;
     height: 30px;
     width: 200px;
-
 }
 p {
     display: flex;
@@ -86,6 +87,6 @@ h2 {
     font-size: 80px;
     border-top-left-radius: 40px;
     color: white;
-    background-color: #37338c 
+    background-color: #37338c;
 }
  
