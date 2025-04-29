@@ -23,7 +23,7 @@
                 <li><a href="#">Feature</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="#">Beta Testers</a></li>
-                <li><a href="#"><Span class="span">Join Waitlist</Span></a></li>
+                <li><a href="signup.html"><Span class="span">Join Waitlist</Span></a></li>
             </ul>
         </div>
         
@@ -53,7 +53,9 @@
             Your all-in-one productivity tool to plan, manage, focus, and stay motivated 
         </p>
 
-        <button id="signUpp">Sign Up</button>
+        <form action="signup.html" target="_blank">
+            <button id="signUp" class="signUpp">Sign Up</button>
+        </form>
 
         <div class="buttons">
             <form action="loginpage.html" target="_blank">
@@ -145,7 +147,9 @@
                    manage your tasks, stay focused, and achieve your goals.
             </p>
             
-            <button id="signUp">Join the waitlist</button>
+            <form action="signup.html" target="_blank">
+                <button id="signUp">Join the Waitlist</button>
+            </form>
         </div>
     </section>
     
@@ -155,7 +159,9 @@
         <p>
 Become a beta tester and tell us what features you want in your dream productivity tool.
         </p>
-        <button id="signUp">Become a better tester</button>
+        <form action="signup.html" target="_blank">
+            <button id="signUp">Become a better tester</button>
+        </form>
         </div>
         
         <div>
@@ -205,20 +211,5 @@ Become a beta tester and tell us what features you want in your dream productivi
         </div>
     </div>
     </footer>
-
-    <script>
-const nav = document.querySelector('.navbar');
-const menu = document.querySelector('.bx-menu');
-
-menu.onclick = () => {
-    menu.classList.toggle('bx-x');
-    nav.classList.toggle('active');
-}
-
-window.onscroll = () => {
-    nav.classList.remove('active')
-    menu.classList.remove('bx-x');
-}
-    </script>
 </body>
 </html>

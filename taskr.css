@@ -7,6 +7,8 @@ body{
     width: 100%;
     position: relative;
     font-family: "Open Sans", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 h1{
@@ -264,7 +266,7 @@ footer ::-webkit-input-placeholder{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    justify-items: center;
     text-align: left;
 }
 
@@ -275,7 +277,7 @@ footer ::-webkit-input-placeholder{
 
 .form input, textarea{
     margin-bottom: 20px;
-    width: 100%;
+    width: 90%;
     padding: 10px;
 }
 
@@ -289,6 +291,7 @@ footer ::-webkit-input-placeholder{
     border-radius: 20px 0 0 20px;
     color: white;
     height: 100vh;
+    padding: 0;
 }
 
 textarea{
@@ -388,7 +391,7 @@ input[type="button"] {
         padding: 50px 3%;
     }
 
-    .taskr{
+    .taskr, .form{
         padding: 0 3%;
     }
 
@@ -408,6 +411,7 @@ input[type="button"] {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
+        width: 100%;
     }
 
     .main .buttons{
@@ -424,7 +428,7 @@ input[type="button"] {
         display: none;
     }
 
-    #signUpp{
+    .signUpp{
         display: none;
     }
 
@@ -433,7 +437,7 @@ input[type="button"] {
     }
 
     .image{
-        width: 100%;
+        width:  100%;
         margin-top: 40px;
     }
 
@@ -451,29 +455,7 @@ input[type="button"] {
     }
 
     .nav .navbar{
-        display: flex;
-        flex-direction: column;
-        top: 50px;
-        position: absolute;
-        right: 100%;
-        margin: 10px 0;
-        border-radius: 20px 0 0 20px;
-        background: #37338C;
-    }
-
-    .nav a{
-        display: block;
-        color: white;
-        border-bottom: 1px solid white;
-        padding: 20px 200px 10px 10px;
-    }
-
-    .nav .span{
-        color: white;
-    }
-
-    .nav .navbar.active{
-        right: 0;
+        display: none;
     }
 
     .launch{
@@ -495,6 +477,7 @@ input[type="button"] {
         border-radius: 0 0 20px 20px;
         height: 30vh;
         width: 100%;
+        padding: 0;
     }
 
     .taskrpage i{
@@ -504,6 +487,20 @@ input[type="button"] {
     .form{
         width: 100%;
         height: 70vh;
+    }
+
+    .form form{
+        width: 100%;
+    }
+}
+
+@media (max-width:500px){
+    header, .main, .waitlist, .shape, footer,.taskr, .contact{
+        max-width: 100%;
+    }
+
+    body{
+        margin: 0;
     }
 }
 
