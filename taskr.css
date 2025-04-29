@@ -292,6 +292,7 @@ footer ::-webkit-input-placeholder{
     color: white;
     height: 100vh;
     padding: 0;
+    margin: 0;
 }
 
 textarea{
@@ -458,6 +459,7 @@ input[type="button"] {
         display: none;
     }
 
+
     .launch{
         width: 100%;
     }
@@ -487,6 +489,8 @@ input[type="button"] {
     .form{
         width: 100%;
         height: 70vh;
+        padding: 0 3%;
+        margin: 0 auto;
     }
 
     .form form{
