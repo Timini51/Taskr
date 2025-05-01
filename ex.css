@@ -12,10 +12,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-box {
     width: 100%;
     max-width: 480px;
-    background-color: rgba(red, green, blue, alpha);
     backdrop-filter: 30;
     border-radius: 16px;
     backdrop-filter: 30px;
@@ -40,14 +46,13 @@ input {
     text-align: left;
     border: solid #ccc 1px;
     
-    
 }
 button {
    height: 40px;
    background: #37338c;
    border: solid #ccc 1px;
    font-size: 20px;
-   border-radius: 10px;
+   border-radius: 4px;
    color: white;
    
 }
@@ -62,8 +67,8 @@ button {
 }
 .google {
     display: flex;
-    border: solid rgb(103, 99, 99);
-    border-radius: 10px;
+    border: solid #ccc 1px;
+    border-radius: 4px;
     justify-content: center;
     align-items: center;
     height: 30px;
@@ -74,6 +79,19 @@ p {
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line1 {
+width: 49%;
+border: solid #ccc 1px;
+text-align: center;
 }
 
 h2 {
