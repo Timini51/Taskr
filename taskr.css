@@ -501,6 +501,7 @@ input[type="submit"] {
         grid-column: 1 / -1;
         grid-row: 2;
         justify-self: center;
+        text-align: center;
     }
 
     /*contact page*/
@@ -532,6 +533,10 @@ input[type="submit"] {
         height: 90vh;
         padding: 0 0 0 3%;
         justify-content: flex-start;
+    }
+
+    footer .icon{
+        justify-content: center;
     }
 
     .form form{
