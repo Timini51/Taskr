@@ -49,7 +49,6 @@ header i{
     display: flex;
     justify-content: space-between;
     position: relative;
-    flex-wrap: wrap;
 }
 
 .nav ul li{
