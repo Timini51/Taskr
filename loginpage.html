@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in page</title>
+    <link rel="stylesheet" href="exter.css" />
+  </head>
+  <body>
+    <div class="form-box">
+      <div class="layer">
+        <img src="check icon.jpg" alt="taskr icon" width="30" />
+        <div><h3>Taskr</h3></div>
+      </div>
+      <div><h1>Welcome back!</h1></div>
+      <div style="font-size: 20px; font-family: inter, sans-serif;">Enter your credentials to access your account</div>
+      <br />
+      <form action="">
+        <label for="Email">Email</label>
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter Your Email"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="text"
+          name="password"
+          placeholder="Enter Your Password"
+          required
+        />
+        <div class="parent">
+          <img src="unchecked.png" alt="unchecked" width="20" height="20" />
+          <div><p>Remember for 30 days</p></div>
+        </div>
+        <button type="signup">Login</button>
+      </form>
+      <div class="line">
+        <div class="line1"></div>
+        <div><p>Or</p></div>
+        <div class="line1"></div>
+      </div>
 
-<head>
-    <meta charset="UTF=8">
-    <meta name="viewport" content="width=device-initial-scale=1">
-    <title>Login page</title>
-    <link rel="stylesheet" href="exter.css">
-    <link rel="stylesheet" href="signup.html">
-    <link rel="stylesheet" href="ex.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-        <div class="main">
-        <div class="form-box">
-            <h1>Welcome back</h1>
-            <div>Enter your credentials to access your account</div>
-            <br>
-            <form action="">
-            <label for="Email">Email</label>
-            <input type="text" name="email" placeholder="Enter Your Email" required>
-            <label for="password">Password</label>
-            <input type="text" name="password" placeholder="............." required>
-            <label type=""><img src="unchecked.png" alt="unchecked box" width="13"> Remember for 30 days</label>
-            <button type="login">Login</button>
-        </form>
-        <div class="line">
-            <div class="line1"></div>
-            <div><p>Or</p></div>
-            <div class="line1"></div>
+      <div class="loginOptions">
+        <div class="google">
+          <img
+            class="google-logo"
+            src="google logo.png"
+            alt="google logo"
+            width="30"
+          />Sign in with Google
         </div>
-            
-            <div class="loginOptions">
-                <div class="google">
-            <img src="google logo.png" alt="google" width="33">Sign in with Google
-            </div>
-            <div class="google">
-            <img src="apple logo.png" alt="apple logo" width="35">Sign in with Apple
-            </div>
-            </div>
-            <p>Don't have an account?<a href="/signup.html">Sign up</a></p> 
+        <div class="google">
+          <img src="apple logo.png" alt="apple logo" width="35" />Sign in with
+          Apple
         </div>
-        <div>
-            <h2><img src="taskr1.png" alt="taskr1" width="150">Taskr</h2>
-        </div>
+      </div>
+      <div class="signing">
+        <p>Don't have an account?</p>
+        <a href="signup.html">Sign up</a>
+      </div>
     </div>
-</body>
+    <br />
+    <div>
+      <div>
+        <h2><img src="taskr1.png" alt="checkbox icon" width="150" />Taskr</h2>
+      </div>
+    </div>
+  </body>
 </html>
