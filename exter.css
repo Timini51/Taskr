@@ -52,6 +52,7 @@ button {
    font-size: 20px;
    border-radius: 10px;
    color: white;
+   font-family: inter, sans-serif;
    
 }
 
@@ -77,6 +78,7 @@ p {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    font-family: inter, sans-serif;
     
 }
 .line {
@@ -84,14 +86,14 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    font-family: inter, sans-serif;    
 
 }
 .line1 {
     width: 49%;
     display: flex;
     border: solid #ccc 1px;
-    text-align: center;
+    text-align: center;    
     
 }
 
@@ -118,7 +120,7 @@ h2 {
     text-align: center;
 }
 label {
-    font-size: 25px;
+    font-size: 20px;
     font-family: inter, sans-serif;
 }
 .parent {
@@ -137,6 +139,7 @@ label {
     font-size: 20px;
     font-family: inter, sans-serif; 
     font-weight: 600;
+    font-family: inter, sans-serif;
 }
 @media (max-width: 746px){
     h2 {
