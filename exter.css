@@ -133,6 +133,11 @@ label {
     font-size: 20px;
     font-family: inter, sans-serif;
 }
+.child {
+    font-size: 20px;
+    font-family: inter, sans-serif; 
+    font-weight: 600;
+}
 @media (max-width: 746px){
     h2 {
         display: none;
@@ -141,6 +146,17 @@ label {
         display: flex;
         justify-content: center;
         align-items: center;
-    
+    }
+    .child {
+        font-size: 15px;
+    font-family: inter, sans-serif; 
+    font-weight: 600;
+    }
+    .loginOptions {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        font-size: 13px;
     }
 }

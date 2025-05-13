@@ -139,6 +139,12 @@ label {
         display: flex;
         justify-content: center;
         align-items: center;
-    
+    }
+    .loginOptions {
+        display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 13px;
     }
 }
