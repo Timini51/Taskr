@@ -266,5 +266,20 @@
     </div>
     </div>
     </footer>
+
+    <script>
+        const nav = document.querySelector('.navbar');
+        const menu = document.querySelector('.menu');
+
+menu.onclick = () => {
+    //menu.classList.toggle('bx-x');
+    nav.classList.toggle('active');
+}
+
+window.onscroll = () => {
+    nav.classList.remove('active')
+    //menu.classList.remove('bx-x');
+}
+    </script>
 </body>
 </html>

@@ -52,14 +52,14 @@ header i{
 }
 
 .nav ul li{
-    padding: 5px 17px;
     list-style: none;  
 }
 
-.nav a{
+.navbar a{
     font-size: 17px;
     color: #4D4D4D;
     text-decoration: none;
+    padding: 5px 17px;
 }
 
 a .active{
@@ -451,7 +451,7 @@ input[type="submit"] {
         width: 299px;
     }
 
-    .formheader .nav ul li{
+    .formheader .nav a{
     padding: 5px 10px;
     }
 
@@ -524,11 +524,12 @@ input[type="submit"] {
     }
 
     .main{
-        min-height: 80vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         margin-top: 40px;
         gap: 0;
+        justify-content: center;
     }
 
     .menu{
@@ -562,7 +563,30 @@ input[type="submit"] {
     }
 
     .nav .navbar{
-        display: none;
+        flex-direction: column;
+        top: 1%;
+        right: 100%;
+        position: absolute;
+        background: #37338C;
+        border-radius: 8px;
+        padding-bottom: 200px;
+        margin-right: 3%;
+        transition: ll 0.4s ease-in-out;
+    }
+
+   .nav .navbar.active{
+        right: 0;
+    }
+
+    .navbar a{
+        padding: 10px 200px 10px 10px;
+        display: block;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+    .navbar .span{
+        color: white;
     }
 
     footer{/*
