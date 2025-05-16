@@ -76,20 +76,11 @@ button{
     margin: 5px 0;
 }
 
-.buttons{
+.download{
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-#signIn{
-    background: #F5F7FA;
-    color: #37338C;
-}
-
-#signUp, #signUpp{
-    background: #37338C;
-    color: white;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
 }
 
 .menu{
@@ -98,27 +89,23 @@ button{
 }
 
 .main{
-    min-height: 50vh;
+    height: 90vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 0 0 7%;
+    padding: 0 7%;
     line-height: 1.5;
     max-width: 100vw;
-}
-
-.main .buttons{
-    display: none;
-    margin: 30px 0;
+    gap: 50px;
 }
 
 .image{
-    width: 40%;
-    margin-top: 40px;
+    width: 60%;
 }
 
 .image img{
     width: 100%;
+    padding-top: 30px;
 }
 
 .span{
@@ -127,7 +114,7 @@ button{
 
 .writeup{
     text-align: left;
-    width: 60%;
+    width: 40%;
 }
 
 .taskr{
@@ -146,7 +133,7 @@ button{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat (2, 1fr);
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     border-radius: 7px; 
     margin-top: 20px;
 }
@@ -154,9 +141,10 @@ button{
 .taskrImportance{
     text-align: center;
     width: 299px;
-    box-shadow: 0 2px 4px  #F5F7FA;
+    box-shadow: 0 2px 12px  #ABBED14D;
     padding: 10px 20px;
     background: white;
+    border-radius: 8px;
 }
 
 .taskrImportance img{
@@ -164,12 +152,8 @@ button{
     height: 56px;
 }
 
-.launch{
-    width: 55%;
-}
-
 .contact{
-    min-height: 200px;
+    min-height: 400px;
     text-align: center;
     align-items: center;
     display: flex;
@@ -180,23 +164,84 @@ button{
     padding: 0 7%;
 }
 
-.waitlist, .shape{
+.contact h2{
+    position: relative;
+}
+
+.contact h2::after{
+    content: '';
+    height: 3px;
+    bottom: -4px;
+    background: #37338C;
+    width: 75%;
+    position: absolute;
+    left: 12%;
+}
+
+.waitlist{
     padding: 50px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: white;
     max-width: 100vw;
+    gap: 50px;
 }
 
-.shape img{
+.jpg{
+    width: 50%;
+}
+
+.jpg img{
     width: 100%;
-    max-width: 400px;
+}
+
+.launch{
+    width: 40%;
+}
+
+.testimonial{
+    padding: 50px 7%;
+}
+
+.testi h2{
+    text-align: center;
+}
+
+.testimony{
+    box-shadow: 0 2px 12px  #ABBED14D;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px 20px;
+    line-height: 1.4;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate{
+    height: 30px;
+    width: 100px;
+}
+
+.low{
+    opacity: 0.2;
+}
+
+.testiCard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: space-between;
 }
 
 footer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+   /* display: grid;
+    grid-template-columns: repeat(3, 1fr);*/
+    display: flex;
     justify-content: space-between;
     background: #263238;
     padding: 50px 7%;
@@ -204,6 +249,12 @@ footer{
     line-height: 1.5;
     cursor: pointer;
     max-width: 100vw;
+}
+
+.company{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 footer li{
@@ -261,7 +312,7 @@ footer ::-webkit-input-placeholder{
 .contactUs{
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     max-width: 100vw;
     justify-content: space-between;
 }
@@ -272,11 +323,11 @@ footer ::-webkit-input-placeholder{
     justify-content: space-between;
 }
 
+.contactUs .logo{
+    display: none;
+}
+
 .form{
-    width: 100%;
-    max-width: 50%;
-    height: 100vh;
-    padding: 0 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,18 +346,32 @@ footer ::-webkit-input-placeholder{
     width: 90%;
 }
 
+.formheader{
+    width: 100%;
+    max-width: 50%;
+    max-height: 100vh;
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly ;
+}
+
+.formheader .nav{
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
 .taskrpage{
     width: 100%;
     max-width: 50%;
-    background: #37338C;
-    font-size: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px 0 0 20px;
-    color: white;
-    height: 100vh;
-    padding: 0 7%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    max-height: 100vh;
+}
+
+.taskrpage img{
+    width: 100%;
+    height: 100%;
 }
 
 textarea{
@@ -332,10 +397,10 @@ input[type="submit"] {
     }
 
     .main{
-        padding: 0 0 0 6%;
+        padding: 0 6%;
     }
 
-    .waitlist, .shape, footer{
+    .waitlist, .testimonial, footer{
         padding: 50px 6%;
     }
 
@@ -366,10 +431,10 @@ input[type="submit"] {
     }
 
     .main{
-        padding: 0 0 0 4%;
+        padding: 0 4%;
     }
 
-    .waitlist, .shape, footer{
+    .waitlist, .testimonial, footer{
         padding: 50px 4%;
     }
 
@@ -384,6 +449,14 @@ input[type="submit"] {
 
     .taskrImportance{
         width: 299px;
+    }
+
+    .formheader .nav ul li{
+    padding: 5px 10px;
+    }
+
+    .formheader .nav a{
+        font-size: 14px;
     }
 }
 
@@ -401,15 +474,15 @@ input[type="submit"] {
     }
 
     .main{
-        padding: 0 0 0 3%;
+        padding: 0 3%;
     }
 
-    .waitlist, .shape, footer{
+    .waitlist, .testimonial, footer{
         padding: 50px 3%;
         margin: 0;
     }
 
-    .taskr, .form, .taskrpage{
+    .taskr, .formheader, .taskrpage{
         padding: 0 3%;
         margin: 0;
     }
@@ -421,10 +494,31 @@ input[type="submit"] {
     button{
         padding: 10px 12px;
     }
+
+    .taskrpage{
+        display: none;
+    }
+
+    .contactUs .logo{
+        display: flex;
+        align-self: center;
+    }
+
+    .formheader{
+        max-width: 100%;
+    }
+
+    .contactUs{
+        height: 70vh;
+    }
+
+    .formheader .nav{
+        display: none;
+    }
 }
 
 @media (max-width:746px){
-    .grid{
+    .grid, .testiCard{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
@@ -434,28 +528,15 @@ input[type="submit"] {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
-    }
-
-    .main .buttons{
-        display: initial;
-        margin: 30px 0;
-    }
-
-    .main .buttons form{
-        width: fit-content;
-        display: initial;
-    }
-
-    header .buttons{
-        display: none;
-    }
-
-    .signUpp{
-        display: none;
+        gap: 0;
     }
 
     .menu{
         display: flex;
+    }
+
+    .image img{
+        padding-top: 0;
     }
 
     .image{
@@ -465,10 +546,14 @@ input[type="submit"] {
 
     .waitlist{
         flex-direction: column-reverse;
-    } 
+    }
+    
+    .jpg{
+    width: 100%;
+    }
 
-    .shape{
-        flex-direction: column;
+    .launch{
+        width: 100%;
     }
 
     .writeup{
@@ -480,43 +565,25 @@ input[type="submit"] {
         display: none;
     }
 
-    .launch{
-        width: 100%;
-    }
-
-    footer{
-        grid-template-columns: repeat(2, 1fr);
+    footer{/*
+        grid-template-columns: repeat(2, 1fr);*/
+        flex-direction: column-reverse;
         gap: 20px;
     }
 
-    .Copyright{
+    .Copyright{/*
         grid-row-start: 3;
         justify-content: center;
         grid-column: 1 / -1;
-        grid-row: 2;
+        grid-row: 2;*/
         justify-self: center;
         text-align: center;
     }
 
     /*contact page*/
     .contactUs{
-        height: 100vh;
-        flex-direction: column-reverse;
+        height: 70vh;
         align-items: start;
-    }
-
-    .taskrpage{
-        font-size: 2em;
-        height: 10vh;
-        color: black;
-        max-width: 100vw;
-        background: white;
-        padding: 30px 3%;
-    }
-
-    .taskrpage i{
-        font-size: 2em;
-        color: #37338C;
     }
 
     .form{
@@ -532,18 +599,25 @@ input[type="submit"] {
 
     .form form{
         max-width: 100%;
-    }
-
-    .shape img{
-        max-width: 370px;
-    }
+    }   
 }
 
 @media (max-width:500px){
-    .shape img{
-        max-width: 280px;
+    .download a img{
+        width: 140px;
+    }
+
+    .contact .download{
+        justify-content: center;
     }
 }
+
+@media (max-height:790px){
+    .main{
+        min-height: 100vh;
+    }
+}
+
 
 
 
