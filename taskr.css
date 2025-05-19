@@ -25,6 +25,22 @@ p{
     line-height: 1.5;
 }
 
+.bg{
+    position: relative;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(bg.svg) no-repeat center center/cover;
+    z-index: 0;
+    opacity: 0.8;
+    height: 100%;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -97,6 +113,8 @@ button{
     line-height: 1.5;
     max-width: 100vw;
     gap: 50px;
+    z-index: 1;
+    position: relative;
 }
 
 .image{
@@ -118,9 +136,10 @@ button{
 }
 
 .taskr{
-    padding: 0 7%;
-    background: white;
+    padding: 10px 7%;
     max-width: 100vw;
+    z-index: 1;
+    position: relative;
 }
 
 .taskrUse{
@@ -202,6 +221,7 @@ button{
 
 .testimonial{
     padding: 50px 7%;
+    max-width: 100vw;
 }
 
 .testi h2{
@@ -247,7 +267,6 @@ footer{
     padding: 50px 7%;
     color:white;
     line-height: 1.5;
-    cursor: pointer;
     max-width: 100vw;
 }
 
@@ -260,6 +279,7 @@ footer{
 footer li{
     list-style: none;
     line-height: 1.5;
+    cursor: pointer;
 }
 
 footer h3{
@@ -271,9 +291,10 @@ footer .icon{
     display: flex;
     gap: 20px;
     margin: 10px 0;
+    cursor: pointer;
 }
 
-.icon i{
+.icon i, .icon img{
     border-radius: 50%;
     padding: 4px;
     background: #4D4D4D;
@@ -405,7 +426,7 @@ input[type="submit"] {
     }
 
     .taskr, .contact{
-        padding: 0 6%;
+        padding: 10px 6%;
     }
 
     .taskrImportance{
@@ -439,7 +460,7 @@ input[type="submit"] {
     }
 
     .taskr, .contact{
-        padding: 0 4%;
+        padding: 10px 4%;
     }
 
     .grid{
@@ -483,7 +504,7 @@ input[type="submit"] {
     }
 
     .taskr, .formheader, .taskrpage{
-        padding: 0 3%;
+        padding: 10px 3%;
         margin: 0;
     }
 
