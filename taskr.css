@@ -62,11 +62,6 @@ header{
     position: relative;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-}
-
 .nav .navbar{
     display: flex;
     justify-content: space-between;
