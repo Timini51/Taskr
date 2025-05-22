@@ -15,8 +15,7 @@
         <div class="background"></div>
     <header>
         <div class="logo">
-            <i class='bx bxs-checkbox-checked'></i>
-            <h2>Taskr</h2>
+            <img src="taskr1.png">
         </div>
         
         <div class="nav">
@@ -150,13 +149,13 @@
                     <img src="mark.png">
                     <img src="rate.png" class="rate">
                 </div><br>
-                <h4>As a full-time student and part-time content creator, I used to struggle with managing my time. Taskr helps me plan ahead and stay focused on what really matters. I really love using Taskr.</h4>
+                <h4 class="black">As a full-time student and part-time content creator, I used to struggle with managing my time. Taskr helps me plan ahead and stay focused on what really matters. I really love using Taskr.</h4>
                 <hr class="low"><br>
 
                 <div class="download">
                     <img src="user1.png">
                 <span>
-                    <h3>Jessica M.</h3>
+                    <h3 class="black">Jessica M.</h3>
                     <p>Student & Youtuber</p>
                 </span>
             </div>
@@ -167,13 +166,13 @@
                     <img src="mark.png">
                     <img src="rate.png" class="rate">
                 </div><br>
-                <h4>Since I started using Taskr, I’ve been finishing work faster and even have more time for myself. It’s like having a personal assistant in my pocket. I can't imagine going back to my old routine.</h4>
+                <h4 class="black">Since I started using Taskr, I’ve been finishing work faster and even have more time for myself. It’s like having a personal assistant in my pocket. I can't imagine going back to my old routine.</h4>
                 <hr class="low"><br>
 
                 <div class="download">
                     <img src="user2.png">
                 <span>
-                    <h3>Rachel O.</h3>
+                    <h3 class="black">Rachel O.</h3>
                     <p>Small Business Owner</p>
                 </span>
             </div>
@@ -184,13 +183,13 @@
                     <img src="mark.png">
                     <img src="rate.png" class="rate">
                 </div><br>
-                <h4>Most productivity apps are overwhelming. Taskr has a clean interface and everything I need without the fluff. Taskr is a simple, clean, and super effective application. It keeps me organized like never before.</h4>
+                <h4 class="black">Most productivity apps are overwhelming. Taskr has a clean interface and everything I need without the fluff. Taskr is a simple, clean, and super effective application. It keeps me organized like never before.</h4>
                 <hr class="low"><br>
 
                 <div class="download">
                     <img src="user3.png">
                 <span>
-                    <h3>Aisha K.</h3>
+                    <h3 class="black">Aisha K.</h3>
                     <p>Freelance Designer</p>
                 </span>
             </div>
@@ -201,13 +200,13 @@
                     <img src="mark.png">
                     <img src="rate.png" class="rate">
                 </div><br>
-                <h4>I love how Taskr sends just the right amount of reminders. It's helped me stop procrastinating and start getting things done. The reminders are a game-changer and I feel more in control of my day than ever before.</h4>
+                <h4 class="black">I love how Taskr sends just the right amount of reminders. It's helped me stop procrastinating and start getting things done. The reminders are a game-changer and I feel more in control of my day than ever before.</h4>
                 <hr class="low"><br>
 
                 <div class="download">
                     <img src="user4.png">
                 <span>
-                    <h3>Daniel L.</h3>
+                    <h3 class="black">Daniel L.</h3>
                     <p>Project Manager</p>
                 </span>
             </div>
@@ -271,19 +270,20 @@
     </div>
     </footer>
 
-    <script>
+    <script defer>
         const nav = document.querySelector('.navbar');
         const menu = document.querySelector('.menu');
 
-menu.onclick = () => {
+    menu.onclick = () => {
     //menu.classList.toggle('bx-x');
+    console.log('menu clicked');
     nav.classList.toggle('active');
-}
+    };
 
-window.onscroll = () => {
+    window.onscroll = () => {
     nav.classList.remove('active')
     //menu.classList.remove('bx-x');
-}
+    }
     </script>
 </body>
 </html>
