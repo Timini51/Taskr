@@ -77,11 +77,32 @@ header{
     color: #263238;
     text-decoration: none;
     padding: 5px 17px;
+    position: relative;
 }
 
 a:active{
     color: black;
     text-decoration: none;
+}
+
+.navbar a::after{
+    content: '';
+    color: #37338C;
+    background: #37338C;
+    height: 3px;
+    bottom: -3px;
+    position: absolute;
+    width: 0;
+    transition: 0.4s ease-in-out;
+    left: 0;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+.navbar a:hover{
+    color: #0F1125;
 }
 
 button{
@@ -198,6 +219,10 @@ button{
     left: 12%;
 }
 
+.contact p{
+    width: 400px;
+}
+
 .waitlist{
     padding: 50px 7%;
     display: flex;
@@ -286,6 +311,11 @@ footer li{
     list-style: none;
     line-height: 1.5;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+footer li a:hover{
+    color: #37338C;
 }
 
 footer h3{
@@ -304,6 +334,10 @@ footer .icon{
     border-radius: 50%;
     padding: 4px;
     background: #4D4D4D;
+}
+
+.icon img:hover, .icon i:hover{
+    background: #37338C;
 }
 
 footer h3{
@@ -611,6 +645,15 @@ input[type="submit"] {
         display: block;
         color: white;
         border-bottom: 1px solid white;
+        transition:all 2s ease-in-out;
+    }
+
+    .navbar a:hover::after{
+        width: 0;
+    }
+
+    .navbar a:hover{
+        font-size: 20px;
     }
 
     .navbar .span{
@@ -631,6 +674,10 @@ input[type="submit"] {
         justify-self: center;
         text-align: center;
     }
+
+    .contact p{
+    width: 300px;
+}
 
     /*contact page*/
     .contactUs{
@@ -666,6 +713,10 @@ input[type="submit"] {
     .form{
         width: 300px;
     }
+
+    .contact p{
+    width: 280px;
+}
 }
 
 @media (max-height:790px){
