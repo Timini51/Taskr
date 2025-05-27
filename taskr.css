@@ -129,7 +129,6 @@ button{
 }
 
 .main{
-    height: 90vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -493,7 +492,7 @@ input[type="submit"] {
     }
 
     .main{
-        padding: 0 4%;
+        padding: 50px 4%;
     }
 
     .waitlist, .testimonial, footer{
@@ -536,7 +535,7 @@ input[type="submit"] {
     }
 
     .main{
-        padding: 0 3%;
+        padding: 50px 3%;
     }
 
     .waitlist, .testimonial, .taskr, footer{
@@ -586,7 +585,6 @@ input[type="submit"] {
     }
 
     .main{
-        height: 80vh;
         display: flex;
         flex-direction: column;
         margin-top: 40px;
@@ -722,8 +720,8 @@ input[type="submit"] {
 }
 
 @media (max-height:870px){
-    .main{
-        min-height: 100vh;
+    .main{/*
+        min-height: 100vh;*/
         padding-top: 20px;
     }
 }
